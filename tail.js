@@ -7,11 +7,11 @@ const assertEqual = function(actual, expected) {
 };
 
 const tail = function(arr) {
-  const newArr = [];
-  for (let i = 1; i < arr.length; i++) {
-    newArr.push(arr[i]);
-  }
-  return newArr;
+  // const newArr = [];
+  // for (let i = 1; i < arr.length; i++) {
+  //   newArr.push(arr[i]);
+  // }
+  return arr.slice(1);
 };
 
 // assertEqual(tail([1, 2, 3]).join(', '), '2, 3');
