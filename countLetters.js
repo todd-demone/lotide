@@ -12,7 +12,10 @@ const countLetters = function(sentence) {
   sentence = sentence.split(' ').join('');
   // initialize the return object
   let count = {};
+  // loop through the characters of the sentence
   for (const char of sentence) {
+    // if the character is already represented as a key in the return object,
+    // then increment the key's value by 1
     if (count[char]) {
       count[char]++;
     } else {
