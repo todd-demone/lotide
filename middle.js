@@ -5,7 +5,10 @@ const middle = function(arr) {
   // a good starting point for calculating where to slice the array
   const mid = arr.length / 2;
   let startingIndex, endingIndex;
-
+  if (!Array.isArray(arr)) {
+    console.log(`The middle function received a ${typeof arr} type rather than an array.`)
+    return false;
+  }
   // if array.length equals 1 or 2 ====> return empty array
   if (arr.length <= 2) {
     return [];
@@ -69,4 +72,5 @@ assertArraysEqual(middle(['cat', 32, {}]), [32]);
 assertArraysEqual(middle(['foo', 'bar', 'baz', 'bongo']), ['bar', 'baz']);
 assertArraysEqual(middle([null, 'cat', false, 42, 'star wars']), [false]);
 assertArraysEqual(middle([false]), []);
+assertArraysEqual(middle(42), false);
 
