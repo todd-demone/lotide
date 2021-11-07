@@ -26,10 +26,10 @@ const assertArraysEqual = function(actual, expected) {
   // compare actual and expected (both are arrays) to see if equal
   // if result is true, print a pass message
   if (eqArrays(actual, expected)) {
-    console.log(`✅️✅️✅️ Assertion Passed: ${actualStr} === ${expectedStr}`);
+    console.log(`✅️ Assertion Passed: ${actualStr} === ${expectedStr}`);
   // else, print a fail message
   } else {
-    console.log(`🛑️🛑️🛑️ Assertion Failed: ${actualStr} !== ${expectedStr}`);
+    console.log(`🛑️ Assertion Failed: ${actualStr} !== ${expectedStr}`);
   }
 };
 
