@@ -1,5 +1,5 @@
-const assertEqual = require('../assertEqual');
 const tail = require('../tail');
+const assertEqual = require('../assertEqual');
 
 // assertEqual(tail([1, 2, 3]).join(', '), '2, 3');
 // assertEqual(tail(['this', 'is', 'a', 'test']).join(' '), 'is a test');
