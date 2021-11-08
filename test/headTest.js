@@ -1,12 +1,20 @@
+const assert = require('chai').assert;
 const head = require('../head');
-const assertEqual = require('../assertEqual');
 
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([1, 2, 3, 4, 5]), 1);
-assertEqual(head(['tomato', 'potato', 'banana']), 'tomato');
-const mishMash = [true, 42, 'chair', undefined];
-assertEqual(head(mishMash), true);
-assertEqual(head(mishMash), 3 > 2);
-assertEqual(head([5]), 5);
-assertEqual(head([]), undefined);
+describe('#head', () => {
+  it('returns 1 for [1, 2, 3]', () => {
+    assert.strictEqual(head([1, 2, 3]), 1);
+  });
+  it("returns '5' for ['5']", () => {
+    assert.strictEqual(head(['5']), '5');
+  });
+  it("returns 'Hello' for ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.strictEqual(head(['Hello', 'Lighthouse', 'Labs']), 'Hello');
+  });
+  it("returns true for [true, 42, 'chair', undefined]", () => {
+    assert.strictEqual(head([true, 42, 'chair', undefined]), true);
+  });
+  it("returns undefined for []", () => {
+    assert.strictEqual(head([]), undefined);
+  });
+});
