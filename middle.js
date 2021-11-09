@@ -5,7 +5,7 @@ const middle = function(arr) {
   let startingIndex, endingIndex;
   
   if (!Array.isArray(arr)) {
-    console.log(`The middle function received a ${typeof arr} type rather than an array.`)
+    console.log(`The middle function received a ${typeof arr} type rather than an array.`);
     return false;
   }
 
