@@ -18,6 +18,8 @@ const flatten = function(arr) {
   return newArr;
 };
 
+module.exports = flatten;
+
 // FXN eqArrays
 // input => Array, Array
 // output => Boolean

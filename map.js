@@ -6,6 +6,8 @@ const map = function(array, callback) {
   return results;
 };
 
+module.exports = map;
+
 // FXN eqArrays
 // input => Array, Array
 // output => Boolean

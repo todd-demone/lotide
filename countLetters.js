@@ -25,6 +25,8 @@ const countLetters = function(sentence) {
   return count;
 };
 
+module.exports = countLetters;
+
 const result1 = countLetters('this is a test');
 assertEqual(result1["t"], 3);
 assertEqual(result1['a'], 1);

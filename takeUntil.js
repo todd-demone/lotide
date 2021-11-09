@@ -21,6 +21,7 @@ const takeUntil = function(arr, callback) {
   return results;
 };
 
+module.exports = takeUntil;
 
 // FXN eqArrays
 // input => Array, Array
