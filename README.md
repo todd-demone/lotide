@@ -33,7 +33,7 @@ The following functions are currently implemented:
 * `_.countOnly(allItems, itemsToCount)`: inspects `allItems` (Array) and returns an object containing counts of everything listed in `itemsToCount` (Object).
 * `_.eqArrays(array1, array2)`: compares two arrays `array1` and `array2` and returns `true` or `false` based on a perfect match 
 * `_.eqObjects(object1, object2)`: compares two objects `object1` and `object2` and returns `true` or `false` based on a perfect match
-* `findKey(object, callback)`: scans `object` and returns the first key for which `callback` returns a truthy value 
+* `_.findKey(object, callback)`: scans `object` and returns the first key for which `callback` returns a truthy value 
 * `_.findKeyByValue(object, value)`: scans `object` and returns the first key which contains the given `value`
 * `_.flatten(array)`: flattens `array` a single level deep
 * `_.head(array)`: gets the first element of `array`

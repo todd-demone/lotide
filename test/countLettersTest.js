@@ -1,10 +1,20 @@
+const assert = require('chai').assert;
 const countLetters = require('../countLetters');
-const assertEqual = require('../assertEqual');
 
 const result1 = countLetters('this is a test');
-assertEqual(result1["t"], 3);
-assertEqual(result1['a'], 1);
-assertEqual(result1['z'], undefined);
-assertEqual(result1[' '], undefined);
-
-// {t: 3, h: 1, i: 2, s: 3, a: 1, e: 1}
+describe('#countLetters', () => {
+  describe("run function on string 'this is a test'", () => {
+    it("the return object has the following key:value pair: t: 3", () => {
+      assert.strictEqual(result1['t'], 3);
+    });
+    it("the return object has the following key:value pair: a: 1", () => {
+      assert.strictEqual(result1['a'], 1);
+    });
+    it("the return object does not contain the key 'z'", () => {
+      assert.strictEqual(result1['z'], undefined);
+    });
+    it("the return object does not contain the key ' '", () => {
+      assert.strictEqual(result1[' '], undefined);
+    });
+  });
+});

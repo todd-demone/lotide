@@ -1,5 +1,5 @@
+const assert = require('chai').assert;
 const letterPositions = require('../letterPositions');
-const assertArraysEqual = require('../assertArraysEqual');
 
 const sentence = 'lighthouse in the house';
 const result1 = letterPositions(sentence);
