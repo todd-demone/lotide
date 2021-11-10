@@ -24,4 +24,4 @@ describe("#middle", () => {
   it("returns false for 42", () => {
     assert.deepEqual(middle(42), false);
   });
-})
+});
