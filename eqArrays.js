@@ -1,16 +1,16 @@
 // Array, Array => Boolean
-const eqArrays = function(arr1, arr2) {
+const eqArrays = function(array1, array2) {
   // arrays are not identical if they have different lengths
-  if (arr1.length !== arr2.length) {
+  if (array1.length !== array2.length) {
     return false;
   }
   // compare each item in arr1 to the corresponding item in arr2
-  for (let i = 0; i < arr1.length; i++) {
-    if (Array.isArray(arr1[i]) && Array.isArray(arr2[i])) {
-      if (!eqArrays(arr1[i], arr2[i])) { // recursive call
+  for (let i = 0; i < array1.length; i++) {
+    if (Array.isArray(array1[i]) && Array.isArray(arr2[i])) {
+      if (!eqArrays(array1[i], array2[i])) { // recursive call
         return false;
       }
-    } else if (arr1[i] !== arr2[i]) {
+    } else if (array1[i] !== array2[i]) {
       return false;
     }
   }

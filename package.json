@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@todd-demone/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library.",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/todd-demone/lotide.git"
   },
-  "author": "",
+  "author": "Todd Demone",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/todd-demone/lotide/issues"

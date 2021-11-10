@@ -3,11 +3,11 @@
 // when callback returns true
 // Argument(s): Array, callback
 // Returns: Array
-const takeUntil = function(arr, callback) {
+const takeUntil = function(array, callback) {
   // create results array
   const results = [];
   // loop through arr
-  for (const item of arr) {
+  for (const item of array) {
     // apply callback to item;
     const isTrue = callback(item);
     // if true, stop the loop and return the results array
