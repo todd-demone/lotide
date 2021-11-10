@@ -27,7 +27,7 @@ This project was created and published by me as part of my learnings at Lighthou
 The following functions are currently implemented:
 
 * `_.assertArraysEqual(actual, expected)`: asserts equality of two arrays, `actual` and `expected`
-* `_.assertEqual(actual, expected)`: asserts strict equality ( === ) of `actual` and `expected`
+* `_.assertEqual(actual, expected)`: asserts strict equality ( === ) of `actual` and `expected`, both of which are primitive values
 * `_.assertObjectsEqual(actual, expected)`: asserts equality of two objects, `actual` and `expected`
 * `_.countLetters(sentence)`: returns an object containing a count of each of the letters in `sentence` (String)
 * `_.countOnly(allItems, itemsToCount)`: inspects `allItems` (Array) and returns an object containing counts of everything listed in `itemsToCount` (Object).
