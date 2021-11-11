@@ -1,5 +1,5 @@
 /**
- * Searches an array for specified items; returns a count of those items.
+ * Searches an array for specified items and returns a count of those items.
  * @param {Array} allItems The array to inspect.
  * @param {object} itemsToCount The items to find.
  * @returns {Object} Returns the number of times each item is found in `allItems`.
