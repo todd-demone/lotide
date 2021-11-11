@@ -1,21 +1,20 @@
-// flatten.js
-
-const flatten = function(arr) {
-  // create a new array to be returned
-  const newArr = [];
-  // check each item in the array
-  for (const item of arr) {
-    // if the item is an array, loop through the array and add each item to newArr
+/**
+ * Flattens an array a single level deep.
+ * @param {Array} array The array to flatten.
+ * @returns {Array} Returns the new flattened array.
+ */
+const flatten = function(array) {
+  const newArray = [];
+  for (const item of array) {
     if (Array.isArray(item)) {
       for (const subitem of item) {
-        newArr.push(subitem);
+        newArray.push(subitem);
       }
-    // otherwise, just add the item to newArr
     } else {
-      newArr.push(item);
+      newArray.push(item);
     }
   }
-  return newArr;
+  return newArray;
 };
 
 module.exports = flatten;

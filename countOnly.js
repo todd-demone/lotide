@@ -1,21 +1,20 @@
-// function countOnly()
-// arguments: (1) Array of strings, (2) Object indicating which array items to count (true or false values)
-// return value: Object, with array things as object key and count (Number) as object value
+/**
+ * Searches an array for specified items; returns a count of those items.
+ * @param {Array} allItems The array to inspect.
+ * @param {object} itemsToCount The items to find.
+ * @returns {Object} Returns the number of times each item is found in `allItems`.
+ */
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
   for (const item of allItems) {
-    // only count an item if it's set to true in our itemsToCount object
-    if (itemsToCount[item]) {
-      // if the item already exists as a key in the `results` return object, then increment by 1
-      if (results[item]) {
+    if (itemsToCount[item]) { // only count an item if it's set to true in our itemsToCount object
+      if (results[item]) { // if the item already exists as a key in the `results` return object, then increment by 1
         results[item]++;
-      // if the item doesn't yet exist as a key in `results`, then create a key and initialize with 1
-      } else {
+      } else { // if the item doesn't yet exist as a key in `results`, then create a key and initialize with 1
         results[item] = 1;
       }
     }
   }
-  
   return results;
 };
 

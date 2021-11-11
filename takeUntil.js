@@ -1,19 +1,15 @@
-// takeUntil.js
-// return items, starting at beginning of array and ending
-// when callback returns true
-// Argument(s): Array, callback
-// Returns: Array
+/**
+ * Returns a slice of an array, starting at the beginning of the array and ending when the applied function returns a truthy value.
+ * @param {Array} array The array to iterate over.
+ * @param {Function} callback The function to invoke on each iteration.
+ * @returns {Array} Returns a slice of array, from beginning of `array` until `callback` returns a truthy value.
+ */
 const takeUntil = function(array, callback) {
-  // create results array
   const results = [];
-  // loop through arr
   for (const item of array) {
-    // apply callback to item;
     const isTrue = callback(item);
-    // if true, stop the loop and return the results array
     if (isTrue) {
       return results;
-    // if false, push to results
     } else {
       results.push(item);
     }

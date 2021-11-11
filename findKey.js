@@ -1,16 +1,13 @@
-// findKey.js
-// scan an object and return first key for which callback returns a truthy value
-// Argument(s): Object, (callback) Function
-// Returns: String aka key from the input Object
+/**
+ * Iterates over an object and returns the first key for which the callback returns a truthy value.
+ * @param {Object} object The object being iterated over.
+ * @param {Function} callback The function invoked per iteration.
+ * @returns {*} Returns a key if `callback` returns `true`, else `undefined`.
+ */
 const findKey = function(object, callback) {
-  // create an array of keys
   const keys = Object.keys(object);
-  // console.log(keys);
-  // loop through the keys
   for (const key of keys) {
-    // apply callback to object property
     const isTrue = callback(object[key]);
-    // if isTrue, return key
     if (isTrue) {
       return key;
     }

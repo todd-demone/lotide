@@ -1,14 +1,10 @@
-// FXN without
-// Arguments *** Array to inspect (source), Array of values to remove (itemsToRemove)
-// Returns *** A new Array with only those items that were missing from
-//             itemsToRemove
+/**
+ * Picks out items from an array, except for items that are specified in the list of `itemsToRemove`.
+ * @param {Array} source The array to iterate over.
+ * @param {Array} itemsToRemove The array of values to exclude.
+ * @returns {Array} Returns the new array containing items from `source` that weren't in `itemsToRemove`.
+ */
 const without = function(source, itemsToRemove) {
-  // The Array.filter() Fxn will return a new array with only those elements
-  // that cause the inline callback function's boolean comparison
-  // to return true.
-  // In this case, if the element is missing from the itemsToRemove array then
-  // the callback function returns true, and the element is added to
-  // the new (returned) array.
   return source.filter((element) => {
     for (const itemToRemove of itemsToRemove) {
       if (element === itemToRemove) {
