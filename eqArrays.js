@@ -1,5 +1,5 @@
 /**
- * Compares two arrays to determine if they are equivalent.
+ * Performs a deep comparison of two arrays to determine if they are equivalent.
  * @param {Array} array1 The array to compare.
  * @param {Array} array2 The other array to compare.
  * @returns {boolean} Returns `true` if the arrays are equivalent, else `false`.

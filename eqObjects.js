@@ -1,7 +1,7 @@
 const eqArrays = require('./eqArrays');
 
 /**
- * Compares two objects to determine if they are equivalent.
+ * Performs a deep comparison of two objects to determine if they are equivalent.
  * @param {Object} object1 The object to compare.
  * @param {Object} object2 The other object to compare.
  * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.

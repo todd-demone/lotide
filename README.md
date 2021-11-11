@@ -31,8 +31,8 @@ The following functions are currently implemented:
 * `_.assertObjectsEqual(actual, expected)`: Asserts equality of two objects, `actual` and `expected`.
 * `_.countLetters(sentence)`: Counts the number of times each letter in `sentence` occurs.
 * `_.countOnly(allItems, itemsToCount)`: Searches an array for specified items and returns a count of those items.
-* `_.eqArrays(array1, array2)`: Compares two arrays to determine if they are equivalent. 
-* `_.eqObjects(object1, object2)`: Compares two objects to determine if they are equivalent.
+* `_.eqArrays(array1, array2)`: Performs a deep comparison of two arrays to determine if they are equivalent. 
+* `_.eqObjects(object1, object2)`: Performs a deep comparison of two objects to determine if they are equivalent.
 * `_.findKey(object, callback)`: Iterates over an object and returns the first key for which the callback returns a truthy value. 
 * `_.findKeyByValue(object, value)`: Scans an object and returns the first key which contains the given value.
 * `_.flatten(array)`: Flattens an array a single level deep.
